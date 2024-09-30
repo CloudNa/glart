@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <title>膝盖内部结构展示</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta property="og:title" content="膝盖内部结构展示">
+  <meta property="og:description" content="交互式产品展示,可用于展会/展厅/汇报/微信分享.13961120761欢迎咨询.">
+  <meta property="og:image" content="https://www.glart.cn/wp-content/uploads/2024/09/knee.jpg">
+  
+  
+
+
+<script src="ie_compat.js"></script>
+
+  <script src="v3d.js"></script>
+  <script src="suva-knie-DE.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="suva-knie-DE.css">
+</head>
+
+<body>
+ 
+  <div id="container"></div>
+<div id="preloader_div" class="preloader_div">
+<div id="loading"></div>
+<div id="v3d-simple-preloader-logo"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<audio id="background-music" src="knee.MP3"></audio>
+
+<script>
+  $(document).ready(function() {
+      var audio = document.getElementById('background-music');
+      
+
+
+      // 监听首次触摸或点击事件
+      $(document).one('click touchstart', function() {
+          audio.play().catch(function(error) {
+              console.log('Autoplay failed:', error);
+          });
+      });
+  });
+</script>
+
+</body>
+
+</html>
+

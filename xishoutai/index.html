@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <title>交互式洗手池展示</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta property="og:title" content="交互式洗手池展示">
+    <meta property="og:description" content="交互式产品展示,可用于展会/展厅/汇报/微信分享.13961120761欢迎咨询.">
+    <meta property="og:image" content="https://www.glart.cn/wp-content/uploads/2024/09/ssc.jpg">
+
+    <link rel="stylesheet" href="./application/assets/public/css/producto.css">
+</head>
+<body class="color-custom style-simple button-stroke layout-full-width if-overlay if-border-hide no-content-padding no-shadows header-classic minimalist-header-no sticky-tb-color ab-hide subheader-both-center menu-line-below-80-1 menuo-sub-active menuo-no-borders menuo-right logo-valign-top logo-no-margin mobile-tb-hide mobile-side-slide mobile-mini-mr-ll mobile-tr-header tr-header tr-menu be-reg-207">
+
+<div class="Content">
+    <input type="hidden" id="id-producto" value="49"></input>
+    <div id="container" class="main-content"></div>
+</div>
+
+<div id="degradado-360"></div>
+<div id="contenedor-acabados">
+    <div class="acabado selected" id="mueble">
+        <img class="img-acabado" src="https://canelaspring.es/application/assets/media/icons/mueble.svg">
+        <p>Furniture</p>
+    </div>
+    <div class="acabado" id="medidas">
+        <img class="img-acabado" src="https://canelaspring.es/application/assets/media/icons/medidas.svg" alt>
+        <p>Measurements</p>
+    </div>
+    <div class="acabado" id="izquierda" data-status="0">
+        <img class="img-acabado" src="https://canelaspring.es/application/assets/media/icons/izquierda.svg" alt>
+        <p>Left</p>
+    </div>
+    <div class="acabado" id="derecha" data-status="0">
+        <img class="img-acabado" src="https://canelaspring.es/application/assets/media/icons/derecha.svg" alt>
+        <p>Right</p>
+    </div>
+</div>
+
+<!-- 添加 audio 元素 -->
+<audio id="background-music" src="xishouci.MP3"></audio>
+
+<script src="./application/assets/sources/js/jquery-2.1.4.min.js"></script>
+<script src="./application/assets/public/js/producto.js"></script>
+<script src="./application/assets/public/js/v3d.js"></script>
+<script src="./application/assets/3d/49/49.js"></script>
+
+<!-- 检测触摸或点击事件来播放音乐 -->
+<script>
+    $(document).ready(function() {
+        var audio = document.getElementById('background-music');
+        
+
+
+        // 监听首次触摸或点击事件
+        $(document).one('click touchstart', function() {
+            audio.play().catch(function(error) {
+                console.log('Autoplay failed:', error);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
