@@ -15,8 +15,8 @@ window.addEventListener('load', function() {
     var sceneURL = params.load ? params.load : '__URL__Barcelona Displaced.gltf'.replace('__URL__', '');
     var productId = document.getElementById('id-producto').value
 
-    logicURL = "/new model/Barcelona Displaced/application/assets/3d/" + productId + "/" + logicURL;
-    sceneURL = "/new model/Barcelona Displaced/application/assets/3d/" + productId + "/" + sceneURL;
+    logicURL = "./application/assets/3d/" + productId + "/" + logicURL;
+    sceneURL = "./application/assets/3d/" + productId + "/" + sceneURL;
 
     if (!sceneURL) {
         console.log('No scene URL specified');
