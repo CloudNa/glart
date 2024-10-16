@@ -26414,7 +26414,7 @@ div#descripcion p {
 }
 
 .v3d-simple-preloader-logo {
-background-image: url("https://www.glart.cn/wp-content/uploads/2024/09/apple-touch-icon.png");
+background-image: url("/apple-touch-icon.png");
 background-size: cover;
     width: 120px;
     height: 120px;
