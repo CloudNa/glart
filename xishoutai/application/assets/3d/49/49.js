@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
 
     var PUZZLES_DIR = '/puzzles/';
     var logicURL = params.logic ? params.logic : '__LOGIC__visual_logic.js'.replace('__LOGIC__', '');
-    var sceneURL = params.load ? params.load : '__URL__Barcelona Displaced.gltf'.replace('__URL__', '');
+    var sceneURL = params.load ? params.load : '__URL__Barcelona Displaced.gltf.xz'.replace('__URL__', '');
     var productId = document.getElementById('id-producto').value
 
     logicURL = "./application/assets/3d/" + productId + "/" + logicURL;
