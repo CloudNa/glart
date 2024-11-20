@@ -26230,7 +26230,8 @@ div#contenedor-acabados {
 div#contenedor-acabados div.acabado {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 100px;
+  width: 200px;
+  height: 200px;
   cursor: pointer;
   -webkit-transition: -webkit-transform .4s;
   transition: -webkit-transform .4s;
@@ -26245,6 +26246,7 @@ div#contenedor-acabados div.acabado {
 div#contenedor-acabados div.acabado img.img-acabado {
   display: block;
   margin: auto;
+  height: 100px;
 }
 
 div#contenedor-acabados div.acabado.selected:not(#mueble):not(#medidas):not(#izquierda):not(#centrado):not(#derecha):not(#doble):not(#perfil):not(#grifo):not(#snap) {
@@ -26293,6 +26295,7 @@ div#contenedor-acabados div.acabado p {
   margin-top: 20px;
   text-align: center;
   line-height: 1.2em;
+  font-size: 30px;
 }
 
 @media (min-width: 770px) {
