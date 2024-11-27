@@ -26416,8 +26416,11 @@ div#descripcion p {
   }
 }
 
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
 .v3d-simple-preloader-logo {
-background-image: url("/apple-touch-icon.png");
+background-image: url("/image/apple-touch-icon.png");
 background-size: cover;
     width: 120px;
     height: 120px;
